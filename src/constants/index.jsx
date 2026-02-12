@@ -1,8 +1,9 @@
-import { House } from "lucide-react"; // Import icons from lucide-react
+import { House } from "lucide-react";
 import { Users } from "lucide-react";
 import { ShieldCheck } from "lucide-react";
 import { MapPin } from "lucide-react";
 import { BarChart } from "lucide-react";
+import { Building } from "lucide-react";
 
 import user1 from "../assets/profile-pictures/user1.jpg";
 import user2 from "../assets/profile-pictures/user2.jpg";
@@ -12,159 +13,182 @@ import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
 
 
+// ================= NAVIGATION =================
+
 export const navItems = [
-  { label: "Features", href: "/Feature" },
-  { label: "Workflow", href: "#" },
-  { label: "Pricing", href: "#" },
-  { label: "Testimonials", href: "#" },
+  { label: "Home", href: "/" },
+  { label: "Listings", href: "/listings" },
+  { label: "Services", href: "/services" },
+  { label: "Testimonials", href: "/testimonials" },
+  { label: "Contact", href: "/contact" },
 ];
+
+
+// ================= TESTIMONIALS =================
 
 export const testimonials = [
   {
-    user: "John Doe",
-    company: "Premier Properties",
+    user: "Rohit Mehra",
+    company: "DLF Phase 2, Gurugram",
     image: user1,
-    text: "MoneyEstates provided invaluable insights that helped us make informed decisions in our property investments. Highly recommend their services!",
+    text: "MoneyEstate helped us find the perfect investment property in Gurugram. Their local knowledge and transparent process made everything smooth.",
   },
   {
-    user: "Jane Smith",
-    company: "Future Realty",
+    user: "Anjali Verma",
+    company: "Sector 56, Gurugram",
     image: user2,
-    text: "The expertise and guidance from MoneyEstates were pivotal in navigating the real estate market. Their professionalism is unmatched.",
+    text: "Vikas Singh personally guided us through every step. The consultation was honest and data-driven. Highly recommended!",
   },
   {
-    user: "David Johnson",
-    company: "Urban Development",
+    user: "Sandeep Arora",
+    company: "Golf Course Road",
     image: user3,
-    text: "MoneyEstates made our home buying process seamless and stress-free. Their team was with us every step of the way.",
+    text: "From property visits to negotiation, MoneyEstate handled everything professionally. Excellent service.",
   },
   {
-    user: "Ronee Brown",
-    company: "NextGen Realty",
+    user: "Neha Kapoor",
+    company: "Sohna Road",
     image: user4,
-    text: "With MoneyEstates' advice, we secured our dream property at a great price. Their market knowledge is impressive!",
+    text: "Their inventory options in Gurugram are impressive. We secured a great deal thanks to their negotiation support.",
   },
   {
-    user: "Michael Wilson",
-    company: "Elite Estates",
+    user: "Amit Bansal",
+    company: "New Gurgaon",
     image: user5,
-    text: "The analysis and reports provided by MoneyEstates helped us strategize our investments effectively. Truly a game-changer!",
+    text: "Accurate property valuation and market insights helped us make the right investment decision.",
   },
   {
-    user: "Emily Davis",
-    company: "Trustworthy Realty",
+    user: "Priya Sharma",
+    company: "MG Road, Gurugram",
     image: user6,
-    text: "We felt supported and well-informed throughout our real estate journey with MoneyEstates. They are experts in their field!",
+    text: "Professional, transparent, and reliable. MoneyEstate truly understands the Gurugram real estate market.",
   },
 ];
+
+
+// ================= FEATURES =================
 
 export const features = [
   {
-    icon: <House />,
-    text: "Comprehensive Market Analysis",
+    icon: <Building />,
+    text: "Verified Gurugram Listings",
     description:
-      "Gain insights into property values, trends, and market dynamics to make informed decisions.",
+      "Explore verified residential and commercial inventory across Gurugram’s prime locations.",
+  },
+  {
+    icon: <House />,
+    text: "Property Buying & Selling Assistance",
+    description:
+      "End-to-end support for buying, selling, and investing in Gurugram real estate.",
   },
   {
     icon: <Users />,
-    text: "Expert Consultation",
+    text: "Expert Consultation by Vikas Singh",
     description:
-      "Receive personalized advice from seasoned real estate professionals to meet your unique needs.",
-  },
-  {
-    icon: <ShieldCheck />,
-    text: "Secure Transactions",
-    description:
-      "Ensure safe and secure property transactions with our trusted advisory services.",
+      "Personalized real estate consultation based on your financial goals and property requirements.",
   },
   {
     icon: <MapPin />,
-    text: "Location Insights",
+    text: "Location-Based Insights",
     description:
-      "Discover the best neighborhoods with in-depth location analysis and demographics.",
+      "Detailed analysis of Gurugram sectors including infrastructure, connectivity, and ROI potential.",
   },
   {
     icon: <BarChart />,
-    text: "Investment Strategies",
+    text: "Investment Planning",
     description:
-      "Develop tailored investment strategies to maximize your returns in real estate.",
+      "Strategic property investment planning focused on long-term appreciation and rental income.",
+  },
+  {
+    icon: <ShieldCheck />,
+    text: "Secure & Transparent Transactions",
+    description:
+      "Complete documentation support and transparent dealings to ensure safe property transactions.",
   },
 ];
 
+
+// ================= SERVICES CHECKLIST =================
+
 export const checklistItems = [
   {
-    title: "Tailored Investment Plans",
+    title: "Residential & Commercial Inventory",
     description:
-      "Receive customized plans to suit your financial goals and real estate aspirations.",
+      "Access curated listings across DLF, Golf Course Road, Sohna Road, New Gurgaon and more.",
   },
   {
     title: "Property Valuation",
     description:
-      "Get accurate property valuations to ensure fair pricing in your transactions.",
+      "Accurate property valuation based on real-time Gurugram market data.",
   },
   {
     title: "Market Trend Reports",
     description:
-      "Stay updated with the latest market trends to make timely decisions.",
+      "Updated insights on Gurugram real estate trends, pricing and demand.",
   },
   {
-    title: "Negotiation Support",
+    title: "Negotiation & Deal Closure Support",
     description:
-      "Benefit from expert negotiation skills to secure the best deals.",
+      "Professional negotiation to help you secure the best price and terms.",
   },
 ];
+
+
+// ================= PRICING =================
 
 export const pricingOptions = [
   {
-    title: "Basic",
-    price: "$0",
+    title: "Consultation",
+    price: "Free",
     features: [
-      "Initial consultation",
-      "Market trend report",
-      "Property listings",
-      "Email support",
+      "Initial consultation with Vikas Singh",
+      "Basic property guidance",
+      "Market overview of Gurugram",
+      "Phone & email support",
     ],
   },
   {
-    title: "Pro",
-    price: "$100",
+    title: "Standard Advisory",
+    price: "Custom",
     features: [
-      "Comprehensive market analysis",
-      "Property valuation services",
-      "Investment strategy session",
+      "Verified property listings",
+      "Property visits coordination",
+      "Investment strategy guidance",
+      "Negotiation assistance",
+    ],
+  },
+  {
+    title: "Premium End-to-End Service",
+    price: "Custom",
+    features: [
+      "All Standard features",
+      "Complete documentation support",
+      "Loan & legal assistance guidance",
       "Priority support",
     ],
   },
-  {
-    title: "Premium",
-    price: "$500",
-    features: [
-      "All Pro features",
-      "Tailored investment plans",
-      "Ongoing consultation",
-      "24/7 support",
-    ],
-  },
 ];
 
+
+// ================= FOOTER LINKS =================
+
 export const resourcesLinks = [
-  { href: "#", text: "Getting Started" },
-  { href: "#", text: "Documentation" },
-  { href: "#", text: "Guides" },
-  { href: "#", text: "Case Studies" },
-  { href: "#", text: "FAQs" },
+  { href: "/listings", text: "Available Listings" },
+  { href: "/services", text: "Our Services" },
+  { href: "/contact", text: "Contact Us" },
+  { href: "/testimonials", text: "Client Reviews" },
 ];
 
 export const platformLinks = [
-  { href: "#", text: "Features" },
-  { href: "#", text: "Client Testimonials" },
-  { href: "#", text: "Success Stories" },
-  { href: "#", text: "Blogs" },
+  { href: "#", text: "Residential Properties" },
+  { href: "#", text: "Commercial Properties" },
+  { href: "#", text: "Investment Opportunities" },
+  { href: "#", text: "Gurugram Sectors Guide" },
 ];
 
 export const communityLinks = [
-  { href: "#", text: "Events" },
-  { href: "#", text: "Webinars" },
-  { href: "#", text: "Workshops" },
-  { href: "#", text: "Networking" },
+  { href: "tel:9910003577", text: "Call: 9910003577" },
+  { href: "mailto:moneyestate.singh@gmail.com", text: "Email: moneyestate.singh@gmail.com" },
+  { href: "#", text: "Office: Gurugram, Haryana" },
+  { href: "#", text: "Owner: Vikas Singh" },
 ];
