@@ -5,6 +5,7 @@ import Contact from "./screens/Contact";
 import Layout from "./layout/Layout";
 import Services from "./screens/Services";
 import Testimonials from "./components/Testimonials";
+import SingleProperty from "./screens/SingleProperty";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
           <Routes>
             <Route path="/" element = {<Landingpage/>} />
             <Route path="/listings" element = {<Listings />} />
+            <Route path="/property/:id" element = {<SingleProperty />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/services" element={<Services />} />
             <Route path="/testimonials" element={<Testimonials />} />

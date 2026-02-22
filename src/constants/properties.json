@@ -1,0 +1,141 @@
+[
+  {
+    "id": 1,
+    "title": "3 BHK Luxury Apartment",
+    "price": "₹2.45 Cr",
+    "location": "DLF Phase 2, Gurugram",
+    "type": "Residential",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    "description": "This stunning 3 BHK luxury apartment is located in the prime area of DLF Phase 2, Gurugram. With premium amenities, modern architecture, and excellent connectivity, it's the perfect investment opportunity or dream home.",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFeet": 1800,
+    "amenities": ["Gym", "Swimming Pool", "24/7 Security", "Parking", "Garden"],
+    "images": [
+      "/public/photos/image1.png"
+    ],
+    "videos": [
+      {
+        "id": "dQw4w9WgXcQ",
+        "title": "Property Walkthrough"
+      },
+      {
+        "id": "9bZkp7q19f0",
+        "title": "Neighborhood Tour"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "4 BHK Premium Villa",
+    "price": "₹4.8 Cr",
+    "location": "Golf Course Road, Gurugram",
+    "type": "Residential",
+    "image": "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80",
+    "description": "A luxurious 4 BHK premium villa on Golf Course Road with sprawling lawns, modern amenities, and panoramic views. Perfect for families seeking luxury and privacy.",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "squareFeet": 3500,
+    "amenities": ["Private Garden", "Home Theater", "Gym", "24/7 Security", "Power Backup"],
+    "images": [
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1570129477492-45a003537e1f?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "videos": [
+      {
+        "id": "dQw4w9WgXcQ",
+        "title": "Villa Tour"
+      },
+      {
+        "id": "9bZkp7q19f0",
+        "title": "Exterior & Garden"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Commercial Office Space",
+    "price": "₹1.9 Cr",
+    "location": "MG Road, Gurugram",
+    "type": "Commercial",
+    "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+    "description": "Prime commercial office space on MG Road with modern infrastructure, excellent visibility, and high footfall. Ideal for retail or corporate offices.",
+    "bedrooms": 0,
+    "bathrooms": 4,
+    "squareFeet": 2200,
+    "amenities": ["High-Speed Internet", "24/7 Security", "Parking", "Conference Rooms", "Modern Architecture"],
+    "images": [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "videos": [
+      {
+        "id": "dQw4w9WgXcQ",
+        "title": "Office Space Tour"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "2 BHK Investment Property",
+    "price": "₹1.35 Cr",
+    "location": "Sohna Road, Gurugram",
+    "type": "Residential",
+    "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+    "description": "A smart 2 BHK investment property on Sohna Road with high rental yields and appreciation potential. Perfect for investors looking for steady returns.",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "squareFeet": 1100,
+    "amenities": ["Elevator", "Gym", "Security", "Parking", "Maintenance Staff"],
+    "images": [
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1570129477492-45a003537e1f?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "videos": [
+      {
+        "id": "dQw4w9WgXcQ",
+        "title": "Property Overview"
+      },
+      {
+        "id": "9bZkp7q19f0",
+        "title": "Locality Highlights"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "5 BHK Ready to Move",
+    "price": "₹7.5 Cr",
+    "location": "Sector-73, Gurugram",
+    "type": "Residential",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    "description": "A stunning 5 BHK ready-to-move property in Sector-73 with world-class amenities. Immediately available for possession with complete privacy and luxury.",
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "squareFeet": 4500,
+    "amenities": ["Concierge Service", "Olympic Pool", "Multi-Gym", "Smart Home", "24/7 Security"],
+    "images": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1570129477492-45a003537e1f?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "videos": [
+      {
+        "id": "dQw4w9WgXcQ",
+        "title": "Complete Home Tour"
+      },
+      {
+        "id": "9bZkp7q19f0",
+        "title": "Amenities Tour"
+      }
+    ]
+  }
+]
+  
