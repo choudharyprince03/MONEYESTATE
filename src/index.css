@@ -6,5 +6,23 @@
 
 :root {
   font-family: "Poppins", sans-serif;
+  color-scheme: light;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+/* dark mode overrides (enabled by adding `dark` class on <html>) */
+.dark body {
+  @apply bg-neutral-900 text-neutral-100;
   color-scheme: dark;
+}
+
+/* Helper class for animating theme changes without a full reload. Add to <html> briefly. */
+.theme-transition *,
+.theme-transition *::before,
+.theme-transition *::after {
+  transition: background-color 260ms ease, color 260ms ease, border-color 260ms ease, box-shadow 260ms ease, fill 260ms ease, stroke 260ms ease;
 }
