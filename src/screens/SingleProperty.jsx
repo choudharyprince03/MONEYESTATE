@@ -110,6 +110,8 @@ const SingleProperty = () => {
                 src={`${property.images[currentImageIndex]}?auto=format&fit=crop&w=1200&q=80`}
                 alt={`Property view ${currentImageIndex + 1}`}
                 className="w-full h-full object-cover cursor-zoom-in"
+                loading="lazy"
+                decoding="async"
               />
 
               {/* Navigation Buttons */}
@@ -144,7 +146,7 @@ const SingleProperty = () => {
                       : "border-transparent"
                   }`}
                 >
-                  <img src={`${img}?auto=format&fit=crop&w=100&q=80`} alt={`Thumbnail ${index + 1}`} className="w-full h-full object-cover" />
+                  <img src={`${img}?auto=format&fit=crop&w=100&q=80`} alt={`Thumbnail ${index + 1}`} className="w-full h-full object-cover" loading="lazy" decoding="async" />
                 </button>
               ))}
             </div>
@@ -177,6 +179,8 @@ const SingleProperty = () => {
                 src={`${property.images[currentImageIndex]}?auto=format&fit=crop&w=2000&q=90`}
                 alt={`Preview ${currentImageIndex + 1}`}
                 className="max-w-full max-h-[80vh] object-contain rounded"
+                loading="lazy"
+                decoding="async"
               />
 
               <button
@@ -194,22 +198,31 @@ const SingleProperty = () => {
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">Property Videos</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {property.videos.map((video, index) => (
-              <div key={index} className="bg-white rounded-2xl shadow-md overflow-hidden">
-                <div className="relative pt-[56.25%] bg-gray-200">
-                  <iframe
-                    className="absolute top-0 left-0 w-full h-full"
-                    src={`https://www.youtube.com/embed/${video.id}`}
-                    title={video.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+            {property.videos.map((video, index) => {
+              const fallbackPoster = property.image || (property.images && property.images[0]) || '/photos/image1.png';
+              const posterSrc = video.poster || fallbackPoster;
+              const videoSrc = video.src || (video.id && video.id.startsWith('http') ? video.id : `/vids/${video.id}.mp4`);
+
+              return (
+                <div key={index} className="bg-white rounded-2xl shadow-md overflow-hidden">
+                  <div className="relative pt-[56.25%] bg-gray-200 overflow-hidden">
+                    <video
+                      className="absolute top-0 left-0 w-full h-full object-cover"
+                      src={videoSrc}
+                      poster={posterSrc}
+                      title={video.title}
+                      controls
+                      playsInline
+                      preload="none"
+                      muted
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-semibold text-gray-800">{video.title}</h3>
+                  </div>
                 </div>
-                <div className="p-4">
-                  <h3 className="font-semibold text-gray-800">{video.title}</h3>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
